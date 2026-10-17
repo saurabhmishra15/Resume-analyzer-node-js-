@@ -26,11 +26,13 @@ function App() {
     try {
       const formData = new FormData();
       formData.append("resume", file);
-
-      const res = await fetch("http://https://resume-analyzer-node-js.onrender.com/api/analyze-resume", {
-        method: "POST",
-        body: formData,
-      });
+     const res = await fetch(
+  "https://resume-analyzer-node-js.onrender.com/api/analyze-resume",
+  {
+    method: "POST",
+    body: formData,
+  }
+);
 
       const responseText = await res.text();
 
