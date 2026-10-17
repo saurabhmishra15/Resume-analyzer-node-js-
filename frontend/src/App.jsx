@@ -27,7 +27,7 @@ function App() {
       const formData = new FormData();
       formData.append("resume", file);
 
-      const res = await fetch("http://localhost:5001/api/analyze-resume", {
+      const res = await fetch("http://https://resume-analyzer-node-js.onrender.com/api/analyze-resume", {
         method: "POST",
         body: formData,
       });
